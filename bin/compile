@@ -6,7 +6,7 @@ set -o pipefail   # do not ignore exit codes when piping output
 # set -x          # enable debugging
 
 # Configure directories
-build_dir=$1
+build_dir=$1 + 'pairStatic'
 cache_dir=$2
 
 compile_buildpack_dir=$(cd $(dirname $0); cd ..; pwd)
