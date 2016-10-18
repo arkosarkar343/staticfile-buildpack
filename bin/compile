@@ -21,6 +21,7 @@ BUILDPACK_PATH=$compile_buildpack_dir source $compile_buildpack_dir/compile-exte
 translated_url=$($compile_buildpack_dir/compile-extensions/bin/download_dependency nginx.tgz /tmp)
 echo "Downloaded [$translated_url]"
 compile_nginx_tgz="/tmp/nginx.tgz"
+echo "build directory " $build_dir
 cd $build_dir
 
 # Alternate root location (default is root of project) for html/js/css
