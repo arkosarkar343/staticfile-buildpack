@@ -33,6 +33,7 @@ else
   status "Using root folder"
 fi
 root_dir=${root_dir:-.}
+echo "root directory " $root_dir
 if [[ ! -e ${root_dir} ]] ; then
   error "the application Staticfile specifies a root directory \`${root_dir}\` that does not exist"
 fi
