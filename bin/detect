@@ -2,7 +2,7 @@
 # bin/detect <build-dir>
 
 BP=$(dirname $(dirname $0))
-
+echo 'in detect phase.... '
 if [ -f $1/Staticfile ]; then
   echo "staticfile `cat $BP/VERSION`" && exit 0
 else
