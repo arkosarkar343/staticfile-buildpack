@@ -22,7 +22,7 @@ translated_url=$($compile_buildpack_dir/compile-extensions/bin/download_dependen
 echo "Downloaded [$translated_url]"
 compile_nginx_tgz="/tmp/nginx.tgz"
 echo "build directory " $build_dir
-cd $build_dir
+cd $build_dir/pairStatic
 ls
 # Alternate root location (default is root of project) for html/js/css
 # root: dist/
