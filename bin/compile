@@ -48,6 +48,7 @@ echo "root directory absolute is .. "
 echo $root_dir_absolute
 if [ ${build_dir}/public != ${root_dir_absolute} ]; then
   tmp_dir=`mktemp -d /tmp/XXXXX`
+  echo "temp directory $tmp_dir"
   mv $root_dir_absolute/!(Staticfile|Staticfile.auth|manifest.yml|stackato.yml) $tmp_dir || true
   rm -rf $build_dir/public
   mv $tmp_dir  $build_dir/public
