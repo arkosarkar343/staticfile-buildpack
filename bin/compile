@@ -23,7 +23,7 @@ echo "Downloaded [$translated_url]"
 compile_nginx_tgz="/tmp/nginx.tgz"
 echo "build directory " $build_dir
 cd $build_dir
-
+ls
 # Alternate root location (default is root of project) for html/js/css
 # root: dist/
 if [[ -e "Staticfile" && "$(grep 'root:' Staticfile)X" != "X" ]]; then
